@@ -1,0 +1,34 @@
+@import "tailwindcss";
+@config "../tailwind.config.js";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;600;700&display=swap');
+
+@layer base {
+  body {
+    @apply bg-cream text-charcoal font-sans antialiased;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading tracking-tight;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary text-white px-5 py-2.5 rounded-lg shadow-md hover:shadow-lg hover:bg-primary-hover hover:-translate-y-0.5 transition-all duration-150 ease-out font-semibold border-none;
+  }
+
+  .btn-secondary {
+    @apply bg-secondary text-white px-5 py-2.5 rounded-lg shadow-md hover:shadow-lg hover:bg-secondary-hover hover:-translate-y-0.5 transition-all duration-150 ease-out font-semibold border-none;
+  }
+
+  .btn-accent {
+    @apply bg-accent text-white px-4 py-2 rounded-lg shadow-md hover:shadow-lg hover:bg-accent-hover hover:-translate-y-0.5 transition-all duration-150 ease-out font-semibold border-none;
+  }
+
+  .card {
+    @apply bg-white rounded-2xl shadow-sm border border-gray-100 p-6 relative overflow-hidden transition-all duration-150 ease-out hover:-translate-y-0.5 hover:shadow-md;
+  }
+
+  .input-field {
+    @apply w-full px-4 py-2.5 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-secondary/30 focus:border-secondary transition-all;
+  }
+}
